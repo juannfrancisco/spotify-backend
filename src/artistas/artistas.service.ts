@@ -29,7 +29,7 @@ export class ArtistasService {
     eliminarArtista(id: number):void{
         for(let i = 0; i < this.artistas.length; i++){
             if(this.artistas[i].id == id){
-                this.artistas.splice(i -1, 1);
+                this.artistas.splice(i, 1);
             }
         }
     }
