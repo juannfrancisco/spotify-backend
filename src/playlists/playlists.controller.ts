@@ -1,14 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
-import { Playlist } from 'src/playlist';
+import { PlaylistsService } from './playlists.service';
+
 
 @Controller('playlists')
 export class PlaylistsController {
 
-    private playlist:Playlist[] = [];
-
+    constructor(private readonly playlistsService:PlaylistsService){}
 
     @Get()
     obtenerPlaylists(){
-        return this.playlist;
+        return this.playlistsService.obtenerPlaylists();
     }
 }
