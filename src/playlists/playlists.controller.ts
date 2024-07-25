@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { PlaylistsService } from './playlists.service';
 
 
@@ -8,7 +8,9 @@ export class PlaylistsController {
     constructor(private readonly playlistsService:PlaylistsService){}
 
     @Get()
-    obtenerPlaylists(){
+    obtenerPlaylists(
+        @Query('nombre') nombre: string,
+        @Query('privada') privada: boolean){
         return this.playlistsService.obtenerPlaylists();
     }
 }

@@ -8,10 +8,11 @@ import { UsuariosController } from './usuarios/usuarios.controller';
 import { ArtistasService } from './artistas/artistas.service';
 import { CancionesService } from './canciones/canciones.service';
 import { PlaylistsService } from './playlists/playlists.service';
+import { UsuariosService } from './usuarios/usuarios.service';
 
 @Module({
   imports: [],
   controllers: [AppController, CancionesController, PlaylistsController, ArtistasController, UsuariosController],
-  providers: [AppService, ArtistasService, CancionesService, PlaylistsService],
+  providers: [AppService, ArtistasService, CancionesService, PlaylistsService, UsuariosService],
 })
 export class AppModule {}

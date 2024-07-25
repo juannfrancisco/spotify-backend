@@ -5,6 +5,7 @@ export class Playlist{
         public identificador: number,
         public nombre: string,
         public canciones: Cancion[],
-        public fechaCreacion: Date
+        public fechaCreacion: Date,
+        public esPrivada: boolean,
       ) {}
 }
