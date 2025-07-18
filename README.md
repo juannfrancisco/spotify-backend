@@ -5,24 +5,18 @@ Proyecto de ejemplo de backend.
 
 Este proyecto utiliza el repositorio Front
 
-```
-https://github.com/juannfrancisco/spotify-front
-```
 
-
-```
+```bash
+# Clonar el repositorio front
 git clone https://github.com/juannfrancisco/spotify-front
-```
 
-```
+# cambiar a la carpeta spotify-front
 cd spotify-front
-```
 
-```
+# Instalar las dependencias
 npm install
-```
 
-```
+# Ejecutar el front
 npm run start
 ```
 
